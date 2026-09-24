@@ -1,1071 +1,2632 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html b:version='2' class='v2' expr:dir='data:blog.languageDirection'
-      xmlns='http://www.w3.org/1999/xhtml'
-      xmlns:b='http://www.google.com/2005/gml/b'
-      xmlns:data='http://www.google.com/2005/gml/data'
-      xmlns:expr='http://www.google.com/2005/gml/expr'>
-
+<html lang="en">
 <head>
-  <meta charset='UTF-8'/>
-  <meta content='width=device-width, initial-scale=1' name='viewport'/>
 
-  <title>
-    <data:blog.pageTitle/>
-  </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta content='Phone Number List, WhatsApp Number List, Telegram Number List and Email List' name='description'/>
-  <meta content='phone number list, whatsapp number list, telegram number list, email list' name='keywords'/>
+<title>Phone Number List, WhatsApp Number List, Telegram Number List & Email List | Phone List</title>
 
-  <b:skin><![CDATA[
+<meta name="description" content="Explore Phone Number List, WhatsApp Number List, Telegram Number List, Email List, Phone Number Library and Special Database resources from Phone List.">
 
-  *{
+<meta name="keywords" content="Phone Number List, Phone Number Database, WhatsApp Number List, WhatsApp Database, Telegram Number List, Telegram Database, Email List, Email Database, Phone Number Library, Special Database, Business Contact Database">
+
+<meta name="robots" content="index, follow">
+<meta name="author" content="Phone List">
+
+<link rel="canonical" href="https://phonelist.io/">
+
+<meta property="og:title" content="Phone List | Global Contact Database">
+<meta property="og:description" content="Explore Phone Number List, WhatsApp Number List, Telegram Number List, Email List and Special Database resources.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://phonelist.io/">
+
+<style>
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
-  }
+}
 
-  html{
+html{
     scroll-behavior:smooth;
-  }
+}
 
-  body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#070b18;
-    color:#e5e7eb;
+body{
+    font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+    background:#ffffff;
+    color:#334155;
     line-height:1.7;
-  }
+}
 
-  a{
-    color:inherit;
+a{
     text-decoration:none;
-  }
+    color:inherit;
+}
 
-  img{
+img{
     max-width:100%;
     height:auto;
-  }
+}
 
-  .container{
-    width:92%;
-    max-width:1180px;
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root{
+    --primary:#2563eb;
+    --primary-dark:#1d4ed8;
+    --secondary:#0f172a;
+    --text:#334155;
+    --muted:#64748b;
+    --light:#f8fafc;
+    --white:#ffffff;
+    --border:#e2e8f0;
+    --success:#059669;
+
+    --shadow:
+    0 20px 60px rgba(15,23,42,.08);
+
+    --radius:20px;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.container{
+    width:min(1180px,92%);
     margin:auto;
-  }
+}
 
-  /* HEADER */
+/* =========================================================
+   HEADER
+========================================================= */
 
-  .site-header{
+.header{
     position:sticky;
     top:0;
-    z-index:999;
-    background:rgba(7,11,24,.94);
-    border-bottom:1px solid rgba(255,255,255,.08);
+    z-index:9999;
+
+    background:rgba(255,255,255,.95);
+
     backdrop-filter:blur(15px);
-  }
 
-  .nav{
-    min-height:74px;
+    border-bottom:1px solid var(--border);
+}
+
+.navbar{
+    min-height:76px;
+
     display:flex;
     align-items:center;
     justify-content:space-between;
-    gap:30px;
-  }
 
-  .logo{
-    font-size:25px;
-    font-weight:800;
-    letter-spacing:-.5px;
-    color:#fff;
-  }
+    gap:25px;
+}
 
-  .logo span{
-    color:#8b5cf6;
-  }
-
-  .menu{
-    display:flex;
-    align-items:center;
-    gap:24px;
-    list-style:none;
-  }
-
-  .menu a{
-    color:#cbd5e1;
-    font-size:14px;
-    font-weight:600;
-    transition:.25s;
-  }
-
-  .menu a:hover{
-    color:#a78bfa;
-  }
-
-  .menu-btn{
-    display:none;
-    cursor:pointer;
+.logo{
     font-size:26px;
-    color:#fff;
-  }
+    font-weight:900;
 
-  /* HERO */
+    letter-spacing:-1px;
 
-  .hero{
-    padding:100px 0 90px;
-    background:
-      radial-gradient(circle at 20% 20%,rgba(139,92,246,.20),transparent 35%),
-      radial-gradient(circle at 80% 30%,rgba(6,182,212,.14),transparent 35%);
-  }
+    color:var(--secondary);
+}
 
-  .hero-grid{
-    display:grid;
-    grid-template-columns:1.15fr .85fr;
-    align-items:center;
-    gap:60px;
-  }
+.logo span{
+    color:var(--primary);
+}
 
-  .badge{
-    display:inline-block;
-    padding:7px 14px;
-    border:1px solid rgba(139,92,246,.4);
-    background:rgba(139,92,246,.10);
-    color:#c4b5fd;
-    border-radius:30px;
-    font-size:13px;
-    margin-bottom:20px;
-  }
-
-  .hero h1{
-    font-size:58px;
-    line-height:1.1;
-    letter-spacing:-2px;
-    color:#fff;
-    margin-bottom:22px;
-  }
-
-  .hero h1 span{
-    background:linear-gradient(90deg,#8b5cf6,#06b6d4);
-    -webkit-background-clip:text;
-    background-clip:text;
-    color:transparent;
-  }
-
-  .hero p{
-    color:#94a3b8;
-    font-size:18px;
-    max-width:680px;
-    margin-bottom:30px;
-  }
-
-  .buttons{
-    display:flex;
-    gap:15px;
-    flex-wrap:wrap;
-  }
-
-  .btn{
-    display:inline-block;
-    padding:13px 22px;
-    border-radius:10px;
-    font-weight:700;
-    transition:.25s;
-  }
-
-  .btn-primary{
-    background:linear-gradient(90deg,#7c3aed,#0891b2);
-    color:#fff;
-  }
-
-  .btn-primary:hover{
-    transform:translateY(-2px);
-    box-shadow:0 10px 30px rgba(124,58,237,.25);
-  }
-
-  .btn-outline{
-    border:1px solid rgba(255,255,255,.15);
-    color:#cbd5e1;
-  }
-
-  .btn-outline:hover{
-    border-color:#8b5cf6;
-    color:#fff;
-  }
-
-  .hero-card{
-    padding:30px;
-    border:1px solid rgba(255,255,255,.10);
-    border-radius:22px;
-    background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.025));
-    box-shadow:0 30px 80px rgba(0,0,0,.35);
-  }
-
-  .hero-card h3{
-    font-size:21px;
-    margin-bottom:18px;
-    color:#fff;
-  }
-
-  .data-row{
+.nav-links{
     display:flex;
     align-items:center;
-    justify-content:space-between;
-    padding:15px 0;
-    border-bottom:1px solid rgba(255,255,255,.07);
-  }
 
-  .data-row:last-child{
-    border-bottom:0;
-  }
+    gap:3px;
+}
 
-  .data-name{
-    color:#cbd5e1;
-  }
+.nav-links a{
+    padding:9px 12px;
 
-  .data-number{
-    color:#67e8f9;
-    font-weight:700;
-  }
-
-  /* SECTIONS */
-
-  .section{
-    padding:85px 0;
-  }
-
-  .section-title{
-    text-align:center;
-    margin-bottom:45px;
-  }
-
-  .section-title h2{
-    color:#fff;
-    font-size:38px;
-    margin-bottom:12px;
-  }
-
-  .section-title p{
-    color:#94a3b8;
-    max-width:650px;
-    margin:auto;
-  }
-
-  /* CARDS */
-
-  .cards{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:22px;
-  }
-
-  .card{
-    padding:30px;
-    border-radius:18px;
-    background:#0d1325;
-    border:1px solid rgba(255,255,255,.08);
-    transition:.3s;
-  }
-
-  .card:hover{
-    transform:translateY(-6px);
-    border-color:rgba(139,92,246,.45);
-    box-shadow:0 20px 50px rgba(0,0,0,.25);
-  }
-
-  .icon{
-    width:52px;
-    height:52px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border-radius:14px;
-    background:rgba(139,92,246,.12);
-    color:#a78bfa;
-    font-size:23px;
-    margin-bottom:20px;
-  }
-
-  .card h3{
-    color:#fff;
-    margin-bottom:10px;
-    font-size:20px;
-  }
-
-  .card p{
-    color:#94a3b8;
-    font-size:15px;
-  }
-
-  /* ABOUT */
-
-  .about{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
-    align-items:center;
-  }
-
-  .about h2{
-    font-size:40px;
-    color:#fff;
-    margin-bottom:18px;
-  }
-
-  .about p{
-    color:#94a3b8;
-    margin-bottom:15px;
-  }
-
-  .feature-list{
-    list-style:none;
-    margin-top:25px;
-  }
-
-  .feature-list li{
-    margin-bottom:13px;
-    color:#cbd5e1;
-  }
-
-  .feature-list li:before{
-    content:'✓';
-    color:#22d3ee;
-    font-weight:bold;
-    margin-right:10px;
-  }
-
-  .about-box{
-    padding:40px;
-    border-radius:22px;
-    background:linear-gradient(145deg,#11182d,#0b1020);
-    border:1px solid rgba(255,255,255,.08);
-  }
-
-  .about-box h3{
-    color:#fff;
-    font-size:25px;
-    margin-bottom:18px;
-  }
-
-  /* FAQ */
-
-  .faq{
-    max-width:850px;
-    margin:auto;
-  }
-
-  .faq-item{
-    margin-bottom:14px;
-    background:#0d1325;
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:13px;
-    overflow:hidden;
-  }
-
-  .faq-question{
-    padding:20px;
-    color:#fff;
-    font-weight:700;
-    cursor:pointer;
-    position:relative;
-    padding-right:55px;
-  }
-
-  .faq-question:after{
-    content:'+';
-    position:absolute;
-    right:20px;
-    top:15px;
-    font-size:25px;
-    color:#a78bfa;
-  }
-
-  .faq-answer{
-    display:none;
-    padding:0 20px 20px;
-    color:#94a3b8;
-  }
-
-  .faq-item.active .faq-answer{
-    display:block;
-  }
-
-  .faq-item.active .faq-question:after{
-    content:'−';
-  }
-
-  /* CTA */
-
-  .cta{
-    padding:70px 30px;
-    border-radius:25px;
-    text-align:center;
-    background:
-      radial-gradient(circle at 20% 30%,rgba(139,92,246,.25),transparent 35%),
-      radial-gradient(circle at 80% 70%,rgba(6,182,212,.18),transparent 35%),
-      #0d1325;
-    border:1px solid rgba(255,255,255,.08);
-  }
-
-  .cta h2{
-    color:#fff;
-    font-size:38px;
-    margin-bottom:15px;
-  }
-
-  .cta p{
-    color:#94a3b8;
-    max-width:650px;
-    margin:0 auto 25px;
-  }
-
-  /* BLOGGER POST */
-
-  .main-wrapper{
-    min-height:300px;
-  }
-
-  .blog-posts{
-    width:100%;
-  }
-
-  .post{
-    background:#0d1325;
-    padding:30px;
-    margin-bottom:25px;
-    border-radius:18px;
-    border:1px solid rgba(255,255,255,.08);
-  }
-
-  .post-title{
-    color:#fff;
-    font-size:30px;
-    margin-bottom:15px;
-  }
-
-  .post-body{
-    color:#cbd5e1;
-  }
-
-  .post-body a{
-    color:#67e8f9;
-  }
-
-  .post-labels a{
-    color:#a78bfa;
-  }
-
-  /* FOOTER */
-
-  footer{
-    margin-top:80px;
-    padding:55px 0 25px;
-    border-top:1px solid rgba(255,255,255,.08);
-    background:#050812;
-  }
-
-  .footer-grid{
-    display:grid;
-    grid-template-columns:2fr 1fr 1fr;
-    gap:40px;
-    margin-bottom:45px;
-  }
-
-  footer h3{
-    color:#fff;
-    margin-bottom:15px;
-  }
-
-  footer p,
-  footer li,
-  footer a{
-    color:#64748b;
-    font-size:14px;
-  }
-
-  footer ul{
-    list-style:none;
-  }
-
-  footer li{
-    margin-bottom:9px;
-  }
-
-  footer a:hover{
-    color:#a78bfa;
-  }
-
-  .copyright{
-    padding-top:25px;
-    border-top:1px solid rgba(255,255,255,.06);
-    text-align:center;
     color:#475569;
+
     font-size:13px;
-  }
 
-  /* RESPONSIVE */
+    font-weight:800;
 
-  @media(max-width:900px){
+    border-radius:10px;
 
-    .menu-btn{
-      display:block;
+    transition:.25s;
+}
+
+.nav-links a:hover{
+    color:var(--primary);
+
+    background:#eff6ff;
+}
+
+.mobile-menu{
+    display:none;
+
+    width:43px;
+    height:43px;
+
+    border:0;
+
+    border-radius:10px;
+
+    background:#eff6ff;
+
+    color:var(--primary);
+
+    font-size:22px;
+
+    cursor:pointer;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+    position:relative;
+
+    overflow:hidden;
+
+    padding:100px 0 90px;
+
+    background:
+
+    radial-gradient(
+        circle at 10% 20%,
+        rgba(37,99,235,.13),
+        transparent 30%
+    ),
+
+    radial-gradient(
+        circle at 90% 10%,
+        rgba(14,165,233,.13),
+        transparent 30%
+    ),
+
+    linear-gradient(
+        180deg,
+        #f8fbff 0%,
+        #ffffff 100%
+    );
+}
+
+.hero-grid{
+    display:grid;
+
+    grid-template-columns:
+    1.15fr
+    .85fr;
+
+    gap:60px;
+
+    align-items:center;
+}
+
+.badge{
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:7px 14px;
+
+    background:#eff6ff;
+
+    color:#1d4ed8;
+
+    border:1px solid #bfdbfe;
+
+    border-radius:50px;
+
+    font-size:12px;
+
+    font-weight:900;
+
+    margin-bottom:20px;
+}
+
+.hero h1{
+    color:var(--secondary);
+
+    font-size:
+    clamp(
+        40px,
+        6vw,
+        68px
+    );
+
+    line-height:1.04;
+
+    letter-spacing:-3px;
+
+    margin-bottom:22px;
+}
+
+.hero h1 span{
+    color:var(--primary);
+}
+
+.hero-description{
+    max-width:690px;
+
+    color:var(--muted);
+
+    font-size:18px;
+
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:13px;
+}
+
+.btn{
+    min-height:48px;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    padding:0 21px;
+
+    border-radius:12px;
+
+    font-size:14px;
+
+    font-weight:900;
+
+    transition:.25s;
+}
+
+.btn-primary{
+    background:var(--primary);
+
+    color:#ffffff;
+
+    box-shadow:
+    0 12px 30px
+    rgba(37,99,235,.25);
+}
+
+.btn-primary:hover{
+    background:var(--primary-dark);
+
+    transform:translateY(-2px);
+}
+
+.btn-outline{
+    border:1px solid var(--border);
+
+    background:#ffffff;
+
+    color:var(--secondary);
+}
+
+.btn-outline:hover{
+    border-color:#93c5fd;
+
+    color:var(--primary);
+}
+
+/* =========================================================
+   HERO DATA CARD
+========================================================= */
+
+.hero-card{
+    padding:28px;
+
+    background:rgba(255,255,255,.92);
+
+    border:1px solid var(--border);
+
+    border-radius:26px;
+
+    box-shadow:var(--shadow);
+}
+
+.hero-card-head{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+}
+
+.hero-card-title{
+    color:var(--secondary);
+
+    font-size:16px;
+
+    font-weight:900;
+}
+
+.status{
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    color:var(--success);
+
+    font-size:11px;
+
+    font-weight:900;
+}
+
+.status-dot{
+    width:8px;
+    height:8px;
+
+    background:#10b981;
+
+    border-radius:50%;
+}
+
+.data-item{
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:15px 0;
+
+    border-bottom:1px solid #edf2f7;
+}
+
+.data-item:last-child{
+    border-bottom:0;
+}
+
+.data-icon{
+    width:44px;
+    height:44px;
+
+    display:grid;
+
+    place-items:center;
+
+    background:#eff6ff;
+
+    border-radius:13px;
+
+    font-size:20px;
+}
+
+.data-text{
+    flex:1;
+}
+
+.data-text strong{
+    display:block;
+
+    color:var(--secondary);
+
+    font-size:14px;
+}
+
+.data-text small{
+    color:var(--muted);
+
+    font-size:12px;
+}
+
+.arrow{
+    color:#94a3b8;
+
+    font-size:18px;
+}
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section{
+    padding:90px 0;
+}
+
+.section-head{
+    max-width:760px;
+
+    margin:
+    0 auto
+    48px;
+
+    text-align:center;
+}
+
+.eyebrow{
+    color:var(--primary);
+
+    font-size:12px;
+
+    font-weight:900;
+
+    text-transform:uppercase;
+
+    letter-spacing:1.5px;
+}
+
+.section-head h2{
+    margin:8px 0 14px;
+
+    color:var(--secondary);
+
+    font-size:
+    clamp(
+        30px,
+        4vw,
+        46px
+    );
+
+    line-height:1.15;
+
+    letter-spacing:-1.5px;
+}
+
+.section-head p{
+    color:var(--muted);
+}
+
+/* =========================================================
+   DATABASE CARDS
+========================================================= */
+
+.database-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:20px;
+}
+
+.database-card{
+    padding:28px;
+
+    background:#ffffff;
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    transition:.3s;
+}
+
+.database-card:hover{
+    transform:translateY(-6px);
+
+    border-color:#bfdbfe;
+
+    box-shadow:var(--shadow);
+}
+
+.card-icon{
+    width:55px;
+    height:55px;
+
+    display:grid;
+
+    place-items:center;
+
+    background:#eff6ff;
+
+    color:var(--primary);
+
+    border-radius:15px;
+
+    font-size:24px;
+
+    margin-bottom:20px;
+}
+
+.database-card h3{
+    color:var(--secondary);
+
+    font-size:21px;
+
+    line-height:1.3;
+
+    margin-bottom:9px;
+}
+
+.database-card p{
+    color:var(--muted);
+
+    font-size:14px;
+
+    margin-bottom:20px;
+}
+
+.card-link{
+    color:var(--primary);
+
+    font-size:13px;
+
+    font-weight:900;
+}
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.light-section{
+    background:#f8fafc;
+}
+
+.features{
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:20px;
+}
+
+.feature{
+    padding:30px 22px;
+
+    text-align:center;
+}
+
+.feature-icon{
+    width:60px;
+    height:60px;
+
+    display:grid;
+
+    place-items:center;
+
+    margin:
+    0 auto
+    18px;
+
+    background:#eff6ff;
+
+    border-radius:50%;
+
+    font-size:25px;
+}
+
+.feature h3{
+    color:var(--secondary);
+
+    margin-bottom:8px;
+}
+
+.feature p{
+    color:var(--muted);
+
+    font-size:14px;
+}
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about-grid{
+    display:grid;
+
+    grid-template-columns:
+    1fr
+    1fr;
+
+    gap:55px;
+
+    align-items:center;
+}
+
+.about-content h2{
+    color:var(--secondary);
+
+    font-size:42px;
+
+    line-height:1.15;
+
+    letter-spacing:-1.5px;
+
+    margin:8px 0 18px;
+}
+
+.about-content p{
+    color:var(--muted);
+
+    margin-bottom:15px;
+}
+
+.check-list{
+    display:grid;
+
+    gap:11px;
+
+    margin-top:22px;
+}
+
+.check-item{
+    display:flex;
+
+    gap:10px;
+
+    color:#475569;
+
+    font-weight:750;
+}
+
+.check{
+    color:var(--success);
+
+    font-weight:900;
+}
+
+.about-card{
+    padding:35px;
+
+    border-radius:25px;
+
+    background:
+    linear-gradient(
+        145deg,
+        #eff6ff,
+        #f8fafc
+    );
+
+    border:1px solid #dbeafe;
+}
+
+.stats{
+    display:grid;
+
+    grid-template-columns:
+    1fr
+    1fr;
+
+    gap:15px;
+}
+
+.stat{
+    padding:25px;
+
+    background:#ffffff;
+
+    border:1px solid var(--border);
+
+    border-radius:17px;
+}
+
+.stat strong{
+    display:block;
+
+    color:var(--primary);
+
+    font-size:27px;
+}
+
+.stat span{
+    color:var(--muted);
+
+    font-size:13px;
+}
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.faq{
+    max-width:850px;
+
+    margin:auto;
+}
+
+.faq-item{
+    overflow:hidden;
+
+    margin-bottom:12px;
+
+    background:#ffffff;
+
+    border:
+    1px solid
+    var(--border);
+
+    border-radius:14px;
+}
+
+.faq-question{
+    width:100%;
+
+    padding:19px 20px;
+
+    border:0;
+
+    background:#ffffff;
+
+    color:var(--secondary);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    text-align:left;
+
+    font-size:15px;
+
+    font-weight:900;
+
+    cursor:pointer;
+}
+
+.faq-answer{
+    display:none;
+
+    padding:
+    0
+    20px
+    20px;
+
+    color:var(--muted);
+
+    font-size:14px;
+}
+
+.faq-item.active .faq-answer{
+    display:block;
+}
+
+.faq-symbol{
+    transition:.25s;
+}
+
+.faq-item.active .faq-symbol{
+    transform:rotate(45deg);
+}
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-section{
+    padding:90px 0;
+}
+
+.contact-box{
+    display:grid;
+
+    grid-template-columns:
+    1fr
+    .8fr;
+
+    gap:50px;
+
+    padding:55px;
+
+    color:#ffffff;
+
+    background:#020617;
+
+    border-radius:28px;
+}
+
+.contact-box h2{
+    font-size:40px;
+
+    line-height:1.15;
+
+    margin-bottom:15px;
+}
+
+.contact-box p{
+    color:#cbd5e1;
+}
+
+.contact-list{
+    display:grid;
+
+    gap:14px;
+}
+
+.contact-item{
+    padding:17px;
+
+    background:
+    rgba(255,255,255,.05);
+
+    border:
+    1px solid
+    rgba(255,255,255,.12);
+
+    border-radius:13px;
+}
+
+.contact-item strong{
+    display:block;
+
+    margin-bottom:3px;
+}
+
+.contact-item span{
+    color:#cbd5e1;
+
+    font-size:13px;
+}
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cta{
+    padding:70px 0;
+}
+
+.cta-box{
+    padding:60px 30px;
+
+    text-align:center;
+
+    border:
+    1px solid
+    #bfdbfe;
+
+    border-radius:25px;
+
+    background:
+    radial-gradient(
+        circle at top right,
+        #dbeafe,
+        transparent 35%
+    ),
+    #eff6ff;
+}
+
+.cta-box h2{
+    color:var(--secondary);
+
+    font-size:38px;
+
+    margin-bottom:10px;
+}
+
+.cta-box p{
+    max-width:650px;
+
+    margin:
+    0 auto
+    25px;
+
+    color:var(--muted);
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer{
+    padding:60px 0 25px;
+
+    background:#020617;
+
+    color:#cbd5e1;
+}
+
+.footer-grid{
+    display:grid;
+
+    grid-template-columns:
+    1.4fr
+    1fr
+    1fr
+    1fr;
+
+    gap:35px;
+
+    padding-bottom:45px;
+}
+
+.footer h3{
+    color:#ffffff;
+
+    font-size:15px;
+
+    margin-bottom:15px;
+}
+
+.footer p{
+    color:#94a3b8;
+
+    font-size:13px;
+}
+
+.footer a{
+    display:block;
+
+    color:#94a3b8;
+
+    font-size:13px;
+
+    margin:9px 0;
+
+    transition:.2s;
+}
+
+.footer a:hover{
+    color:#ffffff;
+}
+
+.footer-bottom{
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    padding-top:22px;
+
+    border-top:
+    1px solid
+    rgba(255,255,255,.1);
+
+    color:#64748b;
+
+    font-size:12px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1000px){
+
+    .nav-links{
+        position:absolute;
+
+        top:76px;
+
+        left:0;
+        right:0;
+
+        display:none;
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+        padding:15px;
+
+        background:#ffffff;
+
+        border-bottom:
+        1px solid
+        var(--border);
     }
 
-    .menu{
-      display:none;
-      position:absolute;
-      left:0;
-      right:0;
-      top:74px;
-      padding:20px;
-      flex-direction:column;
-      align-items:flex-start;
-      background:#080d1d;
-      border-bottom:1px solid rgba(255,255,255,.08);
+    .nav-links.show{
+        display:flex;
     }
 
-    .menu.show{
-      display:flex;
+    .mobile-menu{
+        display:block;
     }
 
-    .hero-grid,
-    .about{
-      grid-template-columns:1fr;
+    .hero-grid{
+        grid-template-columns:1fr;
     }
 
-    .hero h1{
-      font-size:43px;
+    .database-grid{
+        grid-template-columns:
+        repeat(2,1fr);
     }
 
-    .cards{
-      grid-template-columns:1fr 1fr;
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-box{
+        grid-template-columns:1fr;
     }
 
     .footer-grid{
-      grid-template-columns:1fr 1fr;
+        grid-template-columns:
+        1fr 1fr;
     }
+}
 
-  }
-
-  @media(max-width:600px){
-
-    .container{
-      width:90%;
-    }
+@media(max-width:650px){
 
     .hero{
-      padding:70px 0;
-    }
-
-    .hero h1{
-      font-size:36px;
-    }
-
-    .hero p{
-      font-size:16px;
+        padding:70px 0;
     }
 
     .section{
-      padding:65px 0;
+        padding:65px 0;
     }
 
-    .section-title h2,
-    .about h2,
-    .cta h2{
-      font-size:30px;
+    .hero h1{
+        letter-spacing:-2px;
     }
 
-    .cards{
-      grid-template-columns:1fr;
+    .database-grid{
+        grid-template-columns:1fr;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+    }
+
+    .contact-box{
+        padding:35px 25px;
+    }
+
+    .contact-box h2{
+        font-size:30px;
+    }
+
+    .about-content h2{
+        font-size:32px;
+    }
+
+    .cta-box h2{
+        font-size:30px;
     }
 
     .footer-grid{
-      grid-template-columns:1fr;
+        grid-template-columns:1fr;
     }
 
-    .hero-card{
-      padding:22px;
+    .footer-bottom{
+        flex-direction:column;
     }
+}
 
-  }
-
-  ]]></b:skin>
+</style>
 </head>
+
 
 <body>
 
-  <!-- HEADER -->
 
-  <header class='site-header'>
-    <div class='container nav'>
+<!-- =========================================================
+     HEADER
+========================================================= -->
 
-      <a class='logo' expr:href='data:blog.homepageUrl'>
-        Phone<span>List</span>
-      </a>
+<header class="header">
 
-      <div class='menu-btn' onclick='toggleMenu()'>
-        ☰
-      </div>
+<div class="container navbar">
 
-      <ul class='menu' id='mainMenu'>
-        <li><a expr:href='data:blog.homepageUrl'>Home</a></li>
-        <li><a href='/p/phone-number-list.html'>Phone List</a></li>
-        <li><a href='/p/whatsapp-number-list.html'>WhatsApp</a></li>
-        <li><a href='/p/telegram-number-list.html'>Telegram</a></li>
-        <li><a href='/p/email-list.html'>Email List</a></li>
-        <li><a href='/p/about.html'>About</a></li>
-        <li><a href='/p/contact.html'>Contact</a></li>
-      </ul>
+<a
+href="https://phonelist.io/"
+class="logo"
+title="Phone List Home">
 
-    </div>
-  </header>
-
-
-  <!-- HERO -->
-
-  <section class='hero'>
-    <div class='container hero-grid'>
-
-      <div>
-
-        <div class='badge'>
-          Premium Database Resources
-        </div>
-
-        <h1>
-          Phone Number <span>Lists</span> &amp; Database
-        </h1>
-
-        <p>
-          Explore organized phone number lists, WhatsApp lists,
-          Telegram lists and email database resources in one place.
-        </p>
-
-        <div class='buttons'>
-          <a class='btn btn-primary' href='/p/phone-number-list.html'>
-            Explore Lists
-          </a>
-
-          <a class='btn btn-outline' href='/p/about.html'>
-            Learn More
-          </a>
-        </div>
-
-      </div>
-
-
-      <div class='hero-card'>
-
-        <h3>
-          Database Categories
-        </h3>
-
-        <div class='data-row'>
-          <span class='data-name'>Phone Number List</span>
-          <span class='data-number'>01</span>
-        </div>
-
-        <div class='data-row'>
-          <span class='data-name'>WhatsApp Number List</span>
-          <span class='data-number'>02</span>
-        </div>
-
-        <div class='data-row'>
-          <span class='data-name'>Telegram Number List</span>
-          <span class='data-number'>03</span>
-        </div>
-
-        <div class='data-row'>
-          <span class='data-name'>Email List</span>
-          <span class='data-number'>04</span>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- CATEGORIES -->
-
-  <section class='section'>
-    <div class='container'>
-
-      <div class='section-title'>
-        <h2>Our Database Categories</h2>
-        <p>
-          Browse different database categories and find the
-          information you are looking for.
-        </p>
-      </div>
-
-      <div class='cards'>
-
-        <div class='card'>
-          <div class='icon'>☎</div>
-          <h3>Phone Number List</h3>
-          <p>
-            Browse phone number list resources organized by
-            category and location.
-          </p>
-          <br/>
-          <a class='btn btn-outline' href='/p/phone-number-list.html'>
-            View List
-          </a>
-        </div>
-
-        <div class='card'>
-          <div class='icon'>◉</div>
-          <h3>WhatsApp Number List</h3>
-          <p>
-            Explore WhatsApp-related number list resources
-            and database information.
-          </p>
-          <br/>
-          <a class='btn btn-outline' href='/p/whatsapp-number-list.html'>
-            View List
-          </a>
-        </div>
-
-        <div class='card'>
-          <div class='icon'>➤</div>
-          <h3>Telegram Number List</h3>
-          <p>
-            Discover Telegram number list resources and
-            related database categories.
-          </p>
-          <br/>
-          <a class='btn btn-outline' href='/p/telegram-number-list.html'>
-            View List
-          </a>
-        </div>
-
-        <div class='card'>
-          <div class='icon'>@</div>
-          <h3>Email List</h3>
-          <p>
-            Browse email list resources and related
-            database categories.
-          </p>
-          <br/>
-          <a class='btn btn-outline' href='/p/email-list.html'>
-            View List
-          </a>
-        </div>
-
-        <div class='card'>
-          <div class='icon'>▣</div>
-          <h3>Number Library</h3>
-          <p>
-            Access organized resources from our database
-            library.
-          </p>
-          <br/>
-          <a class='btn btn-outline' href='/p/phone-number-library.html'>
-            View Library
-          </a>
-        </div>
-
-        <div class='card'>
-          <div class='icon'>★</div>
-          <h3>Special Database</h3>
-          <p>
-            Explore special database resources and
-            information categories.
-          </p>
-          <br/>
-          <a class='btn btn-outline' href='/p/special-database.html'>
-            Explore
-          </a>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ABOUT -->
-
-  <section class='section'>
-    <div class='container about'>
-
-      <div>
-
-        <div class='badge'>
-          About PhoneList
-        </div>
-
-        <h2>
-          Organized Data Resources
-        </h2>
-
-        <p>
-          PhoneList is designed to make database-related
-          resources easier to discover and navigate.
-        </p>
-
-        <p>
-          Our website provides separate categories for phone
-          numbers, WhatsApp, Telegram and email resources.
-        </p>
-
-        <ul class='feature-list'>
-          <li>Simple category-based navigation</li>
-          <li>Mobile-friendly design</li>
-          <li>Fast and clean interface</li>
-          <li>Organized database resources</li>
-        </ul>
-
-      </div>
-
-
-      <div class='about-box'>
-
-        <h3>
-          Why Use Our Website?
-        </h3>
-
-        <p>
-          Instead of searching through many pages, visitors
-          can use our organized categories to find relevant
-          database resources more easily.
-        </p>
-
-        <br/>
-
-        <a class='btn btn-primary' href='/p/about.html'>
-          About Us
-        </a>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- BLOGGER POSTS -->
-
-  <section class='section'>
-    <div class='container'>
-
-      <div class='section-title'>
-        <h2>Latest Articles</h2>
-        <p>
-          Read the latest posts and database-related
-          information.
-        </p>
-      </div>
-
-      <div class='main-wrapper'>
-
-        <b:section id='main' class='main' showaddelement='yes'>
-
-          <b:widget id='Blog1' locked='false' title='Latest Posts'
-                    type='Blog' version='2'
-                    visible='true'>
-
-            <b:widget-settings>
-              <b:widget-setting name='showDateHeader'>false</b:widget-setting>
-              <b:widget-setting name='showShareButtons'>true</b:widget-setting>
-              <b:widget-setting name='showCommentLink'>true</b:widget-setting>
-              <b:widget-setting name='showLabels'>true</b:widget-setting>
-              <b:widget-setting name='showAuthor'>false</b:widget-setting>
-            </b:widget-settings>
-
-            <b:includable id='main' var='top'>
-
-              <div class='blog-posts'>
-
-                <b:loop values='data:posts' var='post'>
-
-                  <article class='post'>
-
-                    <h2 class='post-title'>
-                      <a expr:href='data:post.url'>
-                        <data:post.title/>
-                      </a>
-                    </h2>
-
-                    <div class='post-body'>
-                      <data:post.body/>
-                    </div>
-
-                  </article>
-
-                </b:loop>
-
-              </div>
-
-            </b:includable>
-
-          </b:widget>
-
-        </b:section>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- FAQ -->
-
-  <section class='section'>
-    <div class='container'>
-
-      <div class='section-title'>
-        <h2>Frequently Asked Questions</h2>
-        <p>
-          Some common questions about our website.
-        </p>
-      </div>
-
-      <div class='faq'>
-
-        <div class='faq-item'>
-          <div class='faq-question'>
-            What is PhoneList?
-          </div>
-          <div class='faq-answer'>
-            PhoneList is a website for organizing and presenting
-            phone number, WhatsApp, Telegram and email-related
-            database resources.
-          </div>
-        </div>
-
-        <div class='faq-item'>
-          <div class='faq-question'>
-            What categories are available?
-          </div>
-          <div class='faq-answer'>
-            The website includes phone number lists, WhatsApp
-            number lists, Telegram number lists, email lists
-            and other database categories.
-          </div>
-        </div>
-
-        <div class='faq-item'>
-          <div class='faq-question'>
-            Is the website mobile friendly?
-          </div>
-          <div class='faq-answer'>
-            Yes. The design is responsive and works on desktop,
-            tablet and mobile screens.
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- CTA -->
+Phone<span>List</span>
 
-  <section class='section'>
-    <div class='container'>
+</a>
 
-      <div class='cta'>
 
-        <h2>
-          Explore Our Database Resources
-        </h2>
+<nav
+class="nav-links"
+id="navLinks">
 
-        <p>
-          Browse the available categories and discover
-          useful information from our website.
-        </p>
 
-        <a class='btn btn-primary' href='/p/phone-number-list.html'>
-          Get Started
-        </a>
+<!-- EXACT USER PROVIDED LINKS -->
 
-      </div>
+<a
+href="https://phonelist.io/"
+title="Home">
 
-    </div>
-  </section>
+Home
 
+</a>
 
-  <!-- FOOTER -->
 
-  <footer>
+<a
+href="https://phonelist.io/phone-number-list"
+title="Phone Number List">
 
-    <div class='container'>
+Phone Number List
 
-      <div class='footer-grid'>
+</a>
 
-        <div>
-          <h3>PhoneList</h3>
-          <p>
-            Organized phone number, WhatsApp, Telegram and
-            email database resources.
-          </p>
-        </div>
 
-        <div>
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a expr:href='data:blog.homepageUrl'>Home</a></li>
-            <li><a href='/p/about.html'>About</a></li>
-            <li><a href='/p/contact.html'>Contact</a></li>
-            <li><a href='/p/privacy-policy.html'>Privacy Policy</a></li>
-          </ul>
-        </div>
+<a
+href="https://phonelist.io/whatsapp-number-list"
+title="WhatsApp Number List">
 
-        <div>
-          <h3>Categories</h3>
-          <ul>
-            <li><a href='/p/phone-number-list.html'>Phone List</a></li>
-            <li><a href='/p/whatsapp-number-list.html'>WhatsApp</a></li>
-            <li><a href='/p/telegram-number-list.html'>Telegram</a></li>
-            <li><a href='/p/email-list.html'>Email List</a></li>
-          </ul>
-        </div>
+WhatsApp Number List
 
-      </div>
+</a>
 
-      <div class='copyright'>
-        &#169; <data:blog.title/> — All Rights Reserved.
-      </div>
 
-    </div>
+<a
+href="https://phonelist.io/telegram-number-list"
+title="Telegram Number List">
 
-  </footer>
+Telegram Number List
 
+</a>
 
-  <!-- JAVASCRIPT -->
 
-  <script type='text/javascript'>
-  //<![CDATA[
+<a
+href="https://phonelist.io/email-list"
+title="Email List">
 
-  function toggleMenu(){
-    var menu = document.getElementById('mainMenu');
+Email List
 
-    if(menu.classList.contains('show')){
-      menu.classList.remove('show');
-    }else{
-      menu.classList.add('show');
-    }
-  }
+</a>
 
-  document.addEventListener('DOMContentLoaded',function(){
 
-    var questions = document.querySelectorAll('.faq-question');
+<a
+href="https://phonelist.io/phone-number-library"
+title="Phone Number Library">
 
-    questions.forEach(function(question){
+Phone Number Library
 
-      question.addEventListener('click',function(){
+</a>
 
-        var item = this.parentElement;
 
-        item.classList.toggle('active');
+<a
+href="https://phonelist.io/special-database"
+title="Special Database">
 
-      });
+Special Database
+
+</a>
+
+</nav>
+
+
+<button
+class="mobile-menu"
+id="mobileMenu"
+aria-label="Open Menu">
+
+☰
+
+</button>
+
+</div>
+
+</header>
+
+
+<!-- =========================================================
+     HOME
+========================================================= -->
+
+<main>
+
+
+<section
+class="hero"
+id="home">
+
+
+<div class="container hero-grid">
+
+
+<div>
+
+
+<div class="badge">
+
+● Global Contact Database
+
+</div>
+
+
+<h1>
+
+Explore
+
+<span>
+Business Contact Data
+</span>
+
+For Global Markets
+
+</h1>
+
+
+<p class="hero-description">
+
+Explore Phone Number List, WhatsApp Number List,
+Telegram Number List, Email List, Phone Number Library
+and Special Database resources for business research,
+customer discovery and marketing requirements.
+
+</p>
+
+
+<div class="hero-buttons">
+
+
+<a
+href="https://phonelist.io/phone-number-list"
+class="btn btn-primary">
+
+Phone Number List →
+
+</a>
+
+
+<a
+href="https://phonelist.io/"
+class="btn btn-outline">
+
+Explore Phone List
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-card">
+
+
+<div class="hero-card-head">
+
+<div class="hero-card-title">
+
+Database Categories
+
+</div>
+
+
+<div class="status">
+
+<span class="status-dot"></span>
+
+Global Data
+
+</div>
+
+</div>
+
+
+<div class="data-item">
+
+<div class="data-icon">
+📱
+</div>
+
+<div class="data-text">
+
+<strong>
+Phone Number List
+</strong>
+
+<small>
+Global phone number database
+</small>
+
+</div>
+
+<a
+href="https://phonelist.io/phone-number-list"
+class="arrow">
+
+→
+
+</a>
+
+</div>
+
+
+<div class="data-item">
+
+<div class="data-icon">
+💬
+</div>
+
+<div class="data-text">
+
+<strong>
+WhatsApp Number List
+</strong>
+
+<small>
+WhatsApp contact database
+</small>
+
+</div>
+
+<a
+href="https://phonelist.io/whatsapp-number-list"
+class="arrow">
+
+→
+
+</a>
+
+</div>
+
+
+<div class="data-item">
+
+<div class="data-icon">
+✈️
+</div>
+
+<div class="data-text">
+
+<strong>
+Telegram Number List
+</strong>
+
+<small>
+Telegram contact database
+</small>
+
+</div>
+
+<a
+href="https://phonelist.io/telegram-number-list"
+class="arrow">
+
+→
+
+</a>
+
+</div>
+
+
+<div class="data-item">
+
+<div class="data-icon">
+✉️
+</div>
+
+<div class="data-text">
+
+<strong>
+Email List
+</strong>
+
+<small>
+International email database
+</small>
+
+</div>
+
+<a
+href="https://phonelist.io/email-list"
+class="arrow">
+
+→
+
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     DATABASE CATEGORIES
+========================================================= -->
+
+<section
+class="section"
+id="databases">
+
+
+<div class="container">
+
+
+<div class="section-head">
+
+<div class="eyebrow">
+Explore Data
+</div>
+
+<h2>
+Global Contact Database Categories
+</h2>
+
+<p>
+Browse the primary Phone List categories and
+explore the available resources for different
+business research requirements.
+</p>
+
+</div>
+
+
+<div class="database-grid">
+
+
+<!-- PHONE -->
+
+<div class="database-card">
+
+<div class="card-icon">
+📱
+</div>
+
+<h3>
+Phone Number List
+</h3>
+
+<p>
+Explore phone number database resources
+organized for international markets and
+business contact research.
+</p>
+
+<a
+href="https://phonelist.io/phone-number-list"
+class="card-link">
+
+Phone Number List →
+
+</a>
+
+</div>
+
+
+<!-- WHATSAPP -->
+
+<div class="database-card">
+
+<div class="card-icon">
+💬
+</div>
+
+<h3>
+WhatsApp Number List
+</h3>
+
+<p>
+Explore WhatsApp number database resources
+for country-specific business research.
+</p>
+
+<a
+href="https://phonelist.io/whatsapp-number-list"
+class="card-link">
+
+WhatsApp Number List →
+
+</a>
+
+</div>
+
+
+<!-- TELEGRAM -->
+
+<div class="database-card">
+
+<div class="card-icon">
+✈️
+</div>
+
+<h3>
+Telegram Number List
+</h3>
+
+<p>
+Explore Telegram number database resources
+for international market research.
+</p>
+
+<a
+href="https://phonelist.io/telegram-number-list"
+class="card-link">
+
+Telegram Number List →
+
+</a>
+
+</div>
+
+
+<!-- EMAIL -->
+
+<div class="database-card">
+
+<div class="card-icon">
+✉️
+</div>
+
+<h3>
+Email List
+</h3>
+
+<p>
+Explore country-specific email database
+resources for business marketing research.
+</p>
+
+<a
+href="https://phonelist.io/email-list"
+class="card-link">
+
+Email List →
+
+</a>
+
+</div>
+
+
+<!-- LIBRARY -->
+
+<div class="database-card">
+
+<div class="card-icon">
+🗂️
+</div>
+
+<h3>
+Phone Number Library
+</h3>
+
+<p>
+Explore the Phone Number Library and its
+related contact-data resources.
+</p>
+
+<a
+href="https://phonelist.io/phone-number-library"
+class="card-link">
+
+Phone Number Library →
+
+</a>
+
+</div>
+
+
+<!-- SPECIAL -->
+
+<div class="database-card">
+
+<div class="card-icon">
+⭐
+</div>
+
+<h3>
+Special Database
+</h3>
+
+<p>
+Explore specialized database resources
+for targeted business requirements.
+</p>
+
+<a
+href="https://phonelist.io/special-database"
+class="card-link">
+
+Special Database →
+
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     SEO INFORMATION SECTION
+========================================================= -->
+
+<section
+class="section light-section">
+
+
+<div class="container">
+
+
+<div class="section-head">
+
+<div class="eyebrow">
+Business Data Resources
+</div>
+
+<h2>
+Phone, WhatsApp, Telegram & Email Data
+</h2>
+
+<p>
+Phone List provides structured access to several
+contact-data categories and country-focused resources.
+</p>
+
+</div>
+
+
+<div class="features">
+
+
+<div class="feature">
+
+<div class="feature-icon">
+🌎
+</div>
+
+<h3>
+International Markets
+</h3>
+
+<p>
+Explore country-focused database categories
+for international business research.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">
+📊
+</div>
+
+<h3>
+Organized Data
+</h3>
+
+<p>
+Find database resources organized according
+to category and market.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">
+🎯
+</div>
+
+<h3>
+Targeted Research
+</h3>
+
+<p>
+Use category-specific resources to investigate
+different customer and market requirements.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     ABOUT US
+========================================================= -->
+
+<section
+class="section"
+id="about">
+
+
+<div class="container about-grid">
+
+
+<div class="about-content">
+
+
+<div class="eyebrow">
+About Us
+</div>
+
+
+<h2>
+About Phone List
+</h2>
+
+
+<p>
+
+Phone List is presented as a resource for exploring
+international phone numbers, WhatsApp numbers,
+Telegram numbers and email database categories.
+
+</p>
+
+
+<p>
+
+The available source content includes country-specific
+database resources and describes business uses such as
+B2B and B2C marketing, customer discovery and CRM
+oriented data workflows.
+
+</p>
+
+
+<div class="check-list">
+
+
+<div class="check-item">
+
+<span class="check">
+✓
+</span>
+
+International database categories
+
+</div>
+
+
+<div class="check-item">
+
+<span class="check">
+✓
+</span>
+
+Country-specific resources
+
+</div>
+
+
+<div class="check-item">
+
+<span class="check">
+✓
+</span>
+
+Business research categories
+
+</div>
+
+
+<div class="check-item">
+
+<span class="check">
+✓
+</span>
+
+Phone, WhatsApp, Telegram and Email data
+
+</div>
+
+
+</div>
+
+
+<br>
+
+
+<a
+href="https://phonelist.io/"
+class="btn btn-primary">
+
+Visit Phone List →
+
+</a>
+
+
+</div>
+
+
+<div class="about-card">
+
+
+<div class="stats">
+
+
+<div class="stat">
+
+<strong>
+6
+</strong>
+
+<span>
+Main database resources
+</span>
+
+</div>
+
+
+<div class="stat">
+
+<strong>
+Global
+</strong>
+
+<span>
+International market coverage
+</span>
+
+</div>
+
+
+<div class="stat">
+
+<strong>
+B2B
+</strong>
+
+<span>
+Business research focus
+</span>
+
+</div>
+
+
+<div class="stat">
+
+<strong>
+B2C
+</strong>
+
+<span>
+Customer research focus
+</span>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     FAQ
+========================================================= -->
+
+<section
+class="section light-section"
+id="faq">
+
+
+<div class="container">
+
+
+<div class="section-head">
+
+<div class="eyebrow">
+FAQ
+</div>
+
+<h2>
+Frequently Asked Questions
+</h2>
+
+<p>
+Learn more about the database categories,
+website resources and available information.
+</p>
+
+</div>
+
+
+<div class="faq">
+
+
+<div class="faq-item">
+
+
+<button
+class="faq-question">
+
+What is a Phone Number List?
+
+<span class="faq-symbol">
++
+</span>
+
+</button>
+
+
+<div class="faq-answer">
+
+A Phone Number List is a category of contact
+database resources containing phone-related
+data organized around different markets and
+countries.
+
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+
+<button
+class="faq-question">
+
+What is a WhatsApp Number List?
+
+<span class="faq-symbol">
++
+</span>
+
+</button>
+
+
+<div class="faq-answer">
+
+The WhatsApp Number List section provides
+country-focused WhatsApp database resources
+for business research and marketing-related
+requirements.
+
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+
+<button
+class="faq-question">
+
+What is a Telegram Number List?
+
+<span class="faq-symbol">
++
+</span>
+
+</button>
+
+
+<div class="faq-answer">
+
+The Telegram Number List section is designed
+to organize Telegram-related database resources
+by market and country.
+
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+
+<button
+class="faq-question">
+
+What is an Email List?
+
+<span class="faq-symbol">
++
+</span>
+
+</button>
+
+
+<div class="faq-answer">
+
+Email List is a category for country-specific
+email database resources used for business
+research and marketing workflows.
+
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+
+<button
+class="faq-question">
+
+What is the Phone Number Library?
+
+<span class="faq-symbol">
++
+</span>
+
+</button>
+
+
+<div class="faq-answer">
+
+The Phone Number Library is a dedicated
+category for organizing phone-number-related
+database resources.
+
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+
+<button
+class="faq-question">
+
+What is the Special Database section?
+
+<span class="faq-symbol">
++
+</span>
+
+</button>
+
+
+<div class="faq-answer">
+
+Special Database is a category for specialized
+database resources and targeted business
+research requirements.
+
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+
+<button
+class="faq-question">
+
+Where can I find the official Phone List website?
+
+<span class="faq-symbol">
++
+</span>
+
+</button>
+
+
+<div class="faq-answer">
+
+You can visit the official Phone List website
+through the following link:
+
+<a
+href="https://phonelist.io/"
+style="color:#2563eb;font-weight:800;">
+
+https://phonelist.io/
+
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT US
+========================================================= -->
+
+<section
+class="contact-section"
+id="contact">
+
+
+<div class="container">
+
+
+<div class="contact-box">
+
+
+<div>
+
+
+<div class="eyebrow">
+Contact Us
+</div>
+
+
+<h2>
+Looking For A Targeted Database?
+</h2>
+
+
+<p>
+
+Tell us about the market, audience or data
+category you are researching and explore the
+available Phone List resources.
+
+</p>
+
+
+<br>
+
+
+<a
+href="https://phonelist.io/"
+class="btn btn-primary">
+
+Contact Phone List →
+
+</a>
+
+</div>
+
+
+<div class="contact-list">
+
+
+<div class="contact-item">
+
+<strong>
+Official Website
+</strong>
+
+<span>
+Phone List
+</span>
+
+</div>
+
+
+<div class="contact-item">
+
+<strong>
+Database Categories
+</strong>
+
+<span>
+Phone • WhatsApp • Telegram • Email
+</span>
+
+</div>
+
+
+<div class="contact-item">
+
+<strong>
+Research Areas
+</strong>
+
+<span>
+Business & Customer Data Research
+</span>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     CTA
+========================================================= -->
+
+<section
+class="cta">
+
+
+<div class="container">
+
+
+<div class="cta-box">
+
+
+<h2>
+Explore Phone List Resources
+</h2>
+
+
+<p>
+
+Explore Phone Number List, WhatsApp Number List,
+Telegram Number List, Email List, Phone Number
+Library and Special Database categories.
+
+</p>
+
+
+<a
+href="https://phonelist.io/"
+class="btn btn-primary">
+
+Visit Phone List →
+
+</a>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="footer">
+
+
+<div class="container">
+
+
+<div class="footer-grid">
+
+
+<div>
+
+
+<a
+href="https://phonelist.io/"
+class="logo"
+style="color:#ffffff;display:inline-block;margin-bottom:14px;">
+
+Phone<span>List</span>
+
+</a>
+
+
+<p>
+
+Explore international Phone Number List,
+WhatsApp Number List, Telegram Number List,
+Email List, Phone Number Library and Special
+Database resources.
+
+</p>
+
+</div>
+
+
+<div>
+
+
+<h3>
+Database
+</h3>
+
+
+<a
+href="https://phonelist.io/phone-number-list">
+
+Phone Number List
+
+</a>
+
+
+<a
+href="https://phonelist.io/whatsapp-number-list">
+
+WhatsApp Number List
+
+</a>
+
+
+<a
+href="https://phonelist.io/telegram-number-list">
+
+Telegram Number List
+
+</a>
+
+
+<a
+href="https://phonelist.io/email-list">
+
+Email List
+
+</a>
+
+
+</div>
+
+
+<div>
+
+
+<h3>
+Resources
+</h3>
+
+
+<a
+href="https://phonelist.io/phone-number-library">
+
+Phone Number Library
+
+</a>
+
+
+<a
+href="https://phonelist.io/special-database">
+
+Special Database
+
+</a>
+
+
+<a
+href="#about">
+
+About Us
+
+</a>
+
+
+<a
+href="#faq">
+
+FAQ
+
+</a>
+
+
+</div>
+
+
+<div>
+
+
+<h3>
+Company
+</h3>
+
+
+<!--
+   IMPORTANT:
+   No separate Contact URL was supplied
+   in the user's current URL table.
+   Therefore Contact Us points to HOME.
+-->
+
+<a
+href="https://phonelist.io/">
+
+Contact Us
+
+</a>
+
+
+<a
+href="https://phonelist.io/">
+
+Official Website
+
+</a>
+
+
+<a
+href="https://phonelist.io/">
+
+Business Database
+
+</a>
+
+
+<a
+href="https://phonelist.io/">
+
+Global Contact Data
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+<div class="footer-bottom">
+
+
+<div>
+
+© 2026 Phone List. All Rights Reserved.
+
+</div>
+
+
+<div>
+
+Phone Number List • WhatsApp Number List •
+Telegram Number List • Email List
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</footer>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+const mobileMenu =
+document.getElementById("mobileMenu");
+
+const navLinks =
+document.getElementById("navLinks");
+
+
+mobileMenu.addEventListener(
+"click",
+function(){
+
+    navLinks.classList.toggle("show");
+
+});
+
+
+/* =========================================================
+   CLOSE MOBILE MENU AFTER CLICK
+========================================================= */
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(function(link){
+
+    link.addEventListener(
+    "click",
+    function(){
+
+        navLinks.classList.remove("show");
 
     });
 
-  });
+});
 
-  //]]>
-  </script>
+
+/* =========================================================
+   FAQ ACCORDION
+========================================================= */
+
+document
+.querySelectorAll(".faq-question")
+.forEach(function(question){
+
+    question.addEventListener(
+    "click",
+    function(){
+
+        const current =
+        this.parentElement;
+
+        document
+        .querySelectorAll(".faq-item")
+        .forEach(function(item){
+
+            if(item !== current){
+
+                item.classList.remove("active");
+
+            }
+
+        });
+
+
+        current.classList.toggle("active");
+
+    });
+
+});
+
+
+/* =========================================================
+   HEADER SHADOW
+========================================================= */
+
+window.addEventListener(
+"scroll",
+function(){
+
+    const header =
+    document.querySelector(".header");
+
+    if(window.scrollY > 20){
+
+        header.style.boxShadow =
+        "0 8px 30px rgba(15,23,42,.06)";
+
+    }else{
+
+        header.style.boxShadow =
+        "none";
+
+    }
+
+});
+
+
+/* =========================================================
+   EXTERNAL LINK SAFETY
+========================================================= */
+
+document
+.querySelectorAll(
+'a[href^="https://phonelist.io/"]'
+)
+.forEach(function(link){
+
+    if(
+        link.target === "_blank"
+    ){
+
+        link.rel =
+        "noopener noreferrer";
+
+    }
+
+});
+
+
+</script>
+
 
 </body>
 </html>
